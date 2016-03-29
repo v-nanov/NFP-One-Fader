@@ -28,6 +28,10 @@
 	<string>Copyright © 2016 Rick Russell. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NFPAddress</key>
+	<string>10.40.41.70</string>
+	<key>NFPChannels</key>
+	<string>408:409:410:411</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
