@@ -170,6 +170,7 @@
 				A043DC671C959F2100303017 /* Frameworks */,
 				A043DC681C959F2100303017 /* Resources */,
 				A043DC921C95A22A00303017 /* Embed Frameworks */,
+				A0027C991CAB454900300B9B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -263,6 +264,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0027C991CAB454900300B9B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/CocoaAsyncSocket.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A043DC661C959F2100303017 /* Sources */ = {
@@ -380,6 +398,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -413,6 +432,7 @@
 				INFOPLIST_FILE = "NFP One Fader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.rickrussell.NFP-One-Fader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
