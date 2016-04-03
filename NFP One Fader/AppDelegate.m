@@ -105,5 +105,11 @@
     return YES;
 }
 
+// Close the application if the window is closed
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    return YES;
+}
+
 
 @end
